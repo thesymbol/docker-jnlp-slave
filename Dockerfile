@@ -24,7 +24,7 @@ FROM openjdk:8-jdk
 MAINTAINER Lorenzo Arribas <lorenzo.arribas@me.com>
 
 RUN apt-get update
-RUN apt-get install -y openssh-server
+RUN apt-get install -y openssh-client
 
 ENV HOME /home/jenkins
 RUN groupadd -g 10000 jenkins
